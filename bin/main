@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require_relative '../lib/purchase_tax_receipt_generator'
+require 'colorize'
+
+puts 'Welcome to the Purchase Tax Receipt Generator!'.yellow
+puts 'Please enter the items you want to purchase in the following format:'.yellow
+puts '1 book at 12.49'.green
+puts '1 music CD at 14.99'.green
+puts '1 chocolate bar at 0.85'.green
+
+PurchaseTaxReceiptGenerator.print_options
+PurchaseTaxReceiptGenerator.execute
